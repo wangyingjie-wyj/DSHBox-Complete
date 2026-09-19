@@ -1,0 +1,44 @@
+{
+  "bundle": {
+    "kind": "runtime",
+    "name": "dshapp-runtime-debian-arm64",
+    "version": "0.1.0",
+    "arch": "arm64",
+    "compression": "zstd",
+    "zstd_level": 19,
+    "built_at": "2026-08-22T16:45:59Z"
+  },
+  "layers": [
+    {
+      "name": "base",
+      "version": "0.1.0",
+      "compression": "zstd",
+      "sha256": "ced7fac23ccb585c5ed1f1f220475004d43ac4bbf15991d18b0e13684be7e6dc",
+      "size_bytes": 166589858,
+      "env_file": ".dshbox/env.d/base.sh",
+      "file": "base.tar.zst",
+      "deps": []
+    },
+    {
+      "name": "node",
+      "version": "24.19.0",
+      "compression": "zstd",
+      "sha256": "a476cffa95a755bc82fc3cb50b599faa7fc87d005b4371d4c4c9b218e03f5784",
+      "size_bytes": 35321820,
+      "env_file": ".dshbox/env.d/node.sh",
+      "file": "node.tar.zst",
+      "deps": ["base"]
+    },
+    {
+      "name": "android-side",
+      "version": "0.1.0",
+      "compression": "zstd",
+      "sha256": "03a794b4130453e58604d303a4ba2b8cebc23ec868cc221cd9236a5493edc9bb",
+      "size_bytes": 113245,
+      "env_file": ".dshbox/env.d/android-side.sh",
+      "file": "android-side.tar.zst",
+      "deps": ["base"]
+    }
+  ],
+  "assembly": ["base", "node", "android-side"]
+}

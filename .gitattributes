@@ -1,0 +1,17 @@
+* text=auto
+*.sh text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.jar -text
+*.aar -text
+*.so -text
+*.deb -text
+*.zip -text
+*.zst -text
+*.part* -text
+*.sha256 text eol=lf
+app/src/main/assets/plugins/dsh-mobile-adapt/plugin/lib/client.js -text whitespace=cr-at-eol
+runtime/android-assets/** -text
+runtime/chunks/** -text

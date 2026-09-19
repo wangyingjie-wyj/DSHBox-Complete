@@ -24,3 +24,18 @@ dist/
 .gradle-home/
 .kotlin/errors/
 app/src/main/assets/runtime/
+
+# Local machine state, generated output and signing credentials
+.kotlin/
+**/.cxx/
+**/.externalNativeBuild/
+**/build/
+.toolchain/
+toolchain.local.json
+*.log
+*.tmp
+*.hprof
+/reference/
+/runtime/android-assets/runtime/base.tar.zst
+
+# The equivalent base.tar.zst chunks and materials.lock.json are committed.

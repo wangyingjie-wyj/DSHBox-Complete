@@ -17,6 +17,7 @@ if (hasReleaseKeystore) {
 android {
     namespace = "com.dshbox.app"
     compileSdk = 36
+    buildToolsVersion = "36.0.0"
 
     signingConfigs {
         create("release") {
@@ -67,10 +68,9 @@ android {
     }
     sourceSets {
         getByName("main") {
-            // 运行环境大层（base/node/android-side/dsh）不进入源码仓库，单独放在发布目录
-            // runtime/android-assets（runtime/ 与 dsh/ 子目录），保证打包后仍是 assets/runtime/*
-            // 与 assets/dsh/* 路径。仓库单独 clone 时请先获取 runtime/。
-            assets.srcDirs("../../runtime/android-assets")
+            // The complete workspace keeps all runtime layers inside this repository.
+            // Restore-Materials.ps1 restores the large base layer from checked-in chunks.
+            assets.srcDirs(rootProject.file("runtime/android-assets"))
         }
     }
     packaging {
@@ -124,3 +124,5 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }
+
+apply(from = rootProject.file("build-support/runtime-materials.gradle.kts"))

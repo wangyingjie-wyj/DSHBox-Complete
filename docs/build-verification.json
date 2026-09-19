@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-09-19T23:35:53.7541797+08:00",
+  "artifact": {
+    "file": "DSHBox-v1.3.1-local.apk",
+    "bytes": 247714744,
+    "sha256": "444f032f67ffdc2c5805f8b9d3944da336c61adcbd3f6859151c7737793f743e",
+    "applicationId": "com.dshbox.app",
+    "versionName": "1.3.1",
+    "versionCode": 7,
+    "minSdk": 29,
+    "targetSdk": 36
+  },
+  "build": {
+    "status": "passed",
+    "gradle": "8.11.1",
+    "agp": "8.9.2",
+    "kotlin": "2.0.21",
+    "jdk": "21.0.12.1",
+    "ndk": "27.0.12077973",
+    "entrypoint": "Build.ps1 -NoPause",
+    "fullBaseRestoreFromChunks": "passed"
+  },
+  "unitTests": {
+    "suites": 55,
+    "tests": 414,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runtimeMaterials": {
+    "verifiedFiles": 9,
+    "allSha256MatchUpstream": true
+  },
+  "apkZipComparison": {
+    "originalEntries": 594,
+    "rebuiltEntries": 594,
+    "identicalEntries": 591,
+    "differentEntries": [
+      "META-INF/version-control-info.textproto",
+      "lib/arm64-v8a/libtermux.so",
+      "lib/x86_64/libtermux.so"
+    ],
+    "allDexAndResourceBytesIdentical": true,
+    "nativeCode": {
+      "arm64_v8a": "Only the 20-byte GNU Build ID differs; all other ELF bytes identical.",
+      "x86_64": "Only the 20-byte GNU Build ID differs; all other ELF bytes identical."
+    }
+  },
+  "signing": {
+    "verification": "passed",
+    "scheme": "v2",
+    "certificateSha256": "766b12387587750499af59406e1863a8d0cc3ab608dccdaa1c0e8c45063596c5",
+    "type": "local Android debug certificate"
+  },
+  "deviceAcceptance": {
+    "status": "pending",
+    "requiredBeforeUpload": true
+  }
+}

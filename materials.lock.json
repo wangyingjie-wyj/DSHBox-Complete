@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "repository": "https://github.com/WSK-build/DSHBox",
+    "tag": "v1.3.1",
+    "commit": "a45f3384cc75312cb5defccb0dd7acb69964c864",
+    "sourceArchiveSha256": "f666e7cda550e86052bb6a0609362b7d38b02ca85ce774307044964f646f507c",
+    "releaseApkSha256": "92471675edded3266b80e7e2e13e367683955991cefcbba5fd78bcbdf45f5a21"
+  },
+  "files": [
+    {
+      "path": "runtime/android-assets/dsh/0.1.5-rc.2.tar.zst",
+      "bytes": 31081789,
+      "sha256": "5f0ad268ec5412928089750451ef6a298694cc9474876404e966e942484d931e"
+    },
+    {
+      "path": "runtime/android-assets/dsh/0.1.5-rc.2.tar.zst.sha256",
+      "bytes": 85,
+      "sha256": "0c86ba9337f8f238a7b4445219128e2caa7192d9af01fb47a5b00e9a768de3d8"
+    },
+    {
+      "path": "runtime/android-assets/runtime/android-side.tar.zst",
+      "bytes": 113245,
+      "sha256": "03a794b4130453e58604d303a4ba2b8cebc23ec868cc221cd9236a5493edc9bb"
+    },
+    {
+      "path": "runtime/android-assets/runtime/android-side.tar.zst.sha256",
+      "bytes": 100,
+      "sha256": "acd99a82924349a0474ec2d90f662a58a076381596000e1f2f74ad16dacb12b9"
+    },
+    {
+      "path": "runtime/android-assets/runtime/base.tar.zst",
+      "bytes": 166589858,
+      "sha256": "ced7fac23ccb585c5ed1f1f220475004d43ac4bbf15991d18b0e13684be7e6dc",
+      "parts": [
+        {
+          "path": "runtime/chunks/base.tar.zst.part001",
+          "bytes": 50331648,
+          "sha256": "209eece63ab43310237226f0df1d6b8ad56ad5ae2431abef2b74365fe02e6845"
+        },
+        {
+          "path": "runtime/chunks/base.tar.zst.part002",
+          "bytes": 50331648,
+          "sha256": "72146723a8ee837b03d1048c39b965dad7912abc6b5dc39443a79fc191ce3c1f"
+        },
+        {
+          "path": "runtime/chunks/base.tar.zst.part003",
+          "bytes": 50331648,
+          "sha256": "9d2c3bb97cb857b59be6d1a2aab5b0d42ee22e3f39f62f361c3d232567813854"
+        },
+        {
+          "path": "runtime/chunks/base.tar.zst.part004",
+          "bytes": 15594914,
+          "sha256": "d70440ccff82f8ee13f9bb6d824534c95394b1a387f8cdbf060a4f7253f1030a"
+        }
+      ]
+    },
+    {
+      "path": "runtime/android-assets/runtime/base.tar.zst.sha256",
+      "bytes": 92,
+      "sha256": "dc7ea5b64b6001339f342623188a810e2ae0ca6227fedaa45813d6459b63b2dc"
+    },
+    {
+      "path": "runtime/android-assets/runtime/node.tar.zst",
+      "bytes": 35321820,
+      "sha256": "a476cffa95a755bc82fc3cb50b599faa7fc87d005b4371d4c4c9b218e03f5784"
+    },
+    {
+      "path": "runtime/android-assets/runtime/node.tar.zst.sha256",
+      "bytes": 92,
+      "sha256": "a4c7a18b09b10e57600e5241e50235e06b8a845e27e7254640c7cafd70b794f5"
+    },
+    {
+      "path": "runtime/android-assets/runtime/runtime-profile.json",
+      "bytes": 1206,
+      "sha256": "48a7f20c9189eec307234af64fe44739adf7e6f7f41c591cc1fbe4c935d77f16"
+    }
+  ],
+  "releaseMaterialOverrides": [
+    {
+      "path": "app/src/main/jniLibs/arm64-v8a/libproot.so",
+      "upstreamSourceSha256": "5a3754570418ce3853055dd5cb845ffe53ed8015122fad5d4320639ce5bff87d",
+      "releaseApkSha256": "43ec585e33cdbaaaab34a3c7c28e7f423021312196773062c654a30c88bee25c",
+      "reason": "Reuse the exact release APK material; original source is preserved in the first Git commit."
+    },
+    {
+      "path": "app/src/main/jniLibs/x86_64/libproot.so",
+      "upstreamSourceSha256": "0aa6d1052580138a98f5b71e77a1d4e5516b161d5e486d803d102fdd3beec78d",
+      "releaseApkSha256": "7034e1161029e2a13c959a2b8f1d7f611c37d7f13bb94be5c6ddfb54462d7407",
+      "reason": "Reuse the exact release APK material; original source is preserved in the first Git commit."
+    },
+    {
+      "path": "app/src/main/assets/plugins/dsh-mobile-adapt/plugin/lib/client.js",
+      "upstreamSourceSha256": "55f243cbb50665376194ec27bf993b1504ce461e1682b388bcc67c7f6dfc9b7f",
+      "releaseApkSha256": "a4d64bc46220b13bd663ba45d78ea6c47cab11efabc551c8cdcafee5312dbc23",
+      "reason": "Reuse the exact release APK material; original source is preserved in the first Git commit."
+    }
+  ]
+}
