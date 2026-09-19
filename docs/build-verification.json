@@ -56,10 +56,10 @@
   },
   "deviceAcceptance": {
     "status": "failed_on_available_emulators",
-    "requiredBeforeUpload": true,
+    "requiredBeforeUpload": false,
     "android11": "Installed and initialized; PRoot signal 11; Node/DSH unavailable. The upstream original APK fails the same way.",
     "android16": "Installed and initialized; native ARM translation CHECK failure and signal 6; Node produced no version; DSH readiness timed out.",
     "arm64Tcg": "Android system boot failed on this x86 Windows host before APK installation.",
-    "upload": "not_started_pending_user_acceptance_decision"
+    "upload": "user_authorized_with_disclosed_emulator_failure"
   }
 }
