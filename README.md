@@ -4,6 +4,8 @@
 
 上游项目：[WSK-build/DSHBox](https://github.com/WSK-build/DSHBox)，版本 [v1.3.1](https://github.com/WSK-build/DSHBox/releases/tag/v1.3.1)。这是完整构建材料的整理版本，保留上游许可证和署名。
 
+验证状态：一键构建和 414 项单元测试通过，完整源码 ZIP 在新目录中也已重新构建成功。本机 x86 模拟器的 ARM 转译无法启动 PRoot/DSH，完整运行验收未通过。详情和证据见 `docs/VALIDATION.md`。
+
 ## Windows 一键打包
 
 1. 将完整仓库解压到普通本地目录，例如 `D:\DSHBox-Complete`。

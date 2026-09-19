@@ -19,7 +19,8 @@
     "jdk": "21.0.12.1",
     "ndk": "27.0.12077973",
     "entrypoint": "Build.ps1 -NoPause",
-    "fullBaseRestoreFromChunks": "passed"
+    "fullBaseRestoreFromChunks": "passed",
+    "freshSourceArchiveBuild": "passed; extracted into a new directory, restored chunks, built with existing toolchain/dependency cache using -Offline"
   },
   "unitTests": {
     "suites": 55,
@@ -54,7 +55,11 @@
     "type": "local Android debug certificate"
   },
   "deviceAcceptance": {
-    "status": "pending",
-    "requiredBeforeUpload": true
+    "status": "failed_on_available_emulators",
+    "requiredBeforeUpload": true,
+    "android11": "Installed and initialized; PRoot signal 11; Node/DSH unavailable. The upstream original APK fails the same way.",
+    "android16": "Installed and initialized; native ARM translation CHECK failure and signal 6; Node produced no version; DSH readiness timed out.",
+    "arm64Tcg": "Android system boot failed on this x86 Windows host before APK installation.",
+    "upload": "not_started_pending_user_acceptance_decision"
   }
 }

@@ -1,0 +1,6 @@
+09-19 15:36:38.981 F/berberis( 4568): vendor/unbundled_google/libs/ndk_translation/guest_os_primitives/guest_signal_handling_arch.cc:42: CHECK failed: 1 != 1
+09-19 15:36:38.982 F/libc    ( 4568): Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 4568 (libproot.so), pid 4568 (libproot.so)
+09-19 15:36:39.414 F/DEBUG   ( 4723): Executable: /system/bin/ndk_translation_program_runner_binfmt_misc_arm64
+09-19 15:36:39.414 F/DEBUG   ( 4723): Abort message: 'vendor/unbundled_google/libs/ndk_translation/guest_os_primitives/guest_signal_handling_arch.cc:42: CHECK failed: 1 != 1'
+09-19 15:36:50.106 W/SandboxManager( 4134): dsh health: initial start timed out
+09-19 15:36:50.185 W/SandboxService( 4134): startDsh: DSH ready timeout
